@@ -1,0 +1,166 @@
+body{
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+}
+#loading{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    background-color: #333;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#navBar{
+
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    left:-300px;
+    z-index: 999;
+    
+}
+#navBar .nav-content {
+    background-color: #000;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#navBar .nav-content ul li {
+  padding-top: 45px ;
+  opacity: 0;
+}
+#navBar .nav-content .navlist-content{
+    list-style-type: none;
+}
+#navBar .nav-content .navlist-content li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: larger;  
+}
+#navBar .nav-content .navIcons {
+    color: #555;
+}
+#navBar .nav-content .navIcons i {
+    padding-left:10px ;
+}
+#navBar .navToggle{
+    background-color: #fff;
+    width : 10%;
+
+}
+#navBar .navToggle i {
+    cursor: pointer;
+}
+.search{
+    display: none;
+}
+.rowItem{
+    position: relative;
+    overflow:hidden ;
+}
+.overLay{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left:0;
+    right: 0;
+    transition: top 1s;
+    
+}
+.col-md-3:hover .overLay{
+    top:0;
+
+}
+.overLay p {
+    font-size: larger;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+.foodDescription{
+    background-color: #000;
+    position: fixed;
+    top:0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    display: block;
+}
+.foodDescription .container .row .col-md-9 .w-75 span{
+    
+    color: #fff;
+    padding: 1px;
+    border-radius: 5px;
+    margin: 5px;
+}
+.foodDescription .container .row .col-md-9 .pink{
+    background-color: #f8d7da;
+    text-align: center;
+    width: 30%;
+    border-radius: 5px;
+    color: #831c59;
+}
+.foodDescription .container .row .col-md-9 button a{
+    text-decoration: none;
+    color: #fff;
+}
+.rowCateg{
+    position: relative;
+    overflow:hidden ;
+}
+.overLayer{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    position: absolute;
+    top:100%;
+    left:0;
+    right: 0;
+    overflow: hidden;
+    transition: top 1s;
+    
+}
+.rowCateg:hover .overLayer{
+    top:0;
+
+}
+
+.overLayer p {
+    font-size: smaller;
+    font-weight: 300;
+}
+.foodDescription{
+    background-color: #000;
+    position: fixed;
+    top:0;
+    right: 0; 
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    display: block;
+}
+.fa-bowl-food {
+    color: #9ee650ab;
+}
+.contact{
+    display: none;
+}
+
+.sucees{
+ color: green;
+ 
+} 
+.error{
+    color: red;
+}
